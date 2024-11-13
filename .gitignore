@@ -1,5 +1,6 @@
 /46711_Assignment_2.pdf
 *.mat
 *.pdf
+_pycache_/*
 basic_example_springmass.py
 Task_1.py
