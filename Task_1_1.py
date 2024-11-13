@@ -2,9 +2,11 @@ import numpy as np
 import cmath
 import matplotlib.pyplot as plt
 import scipy.io as sio
+import os 
 
 """ Load System Data """
-sys_data = sio.loadmat('system_q1a.mat',squeeze_me=True) # event. use squeeze_me=True to get rid of unnecessary nesting
+folder_path = os.path.join(os.getcwd(),'Assignment_data')
+sys_data = sio.loadmat(os.path.join(folder_path,'system_q1a.mat'),squeeze_me=True) # event. use squeeze_me=True to get rid of unnecessary nesting
 A = sys_data['A_q1a']
 n = len(A)
 
